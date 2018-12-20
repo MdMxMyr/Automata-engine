@@ -249,15 +249,12 @@
     let board;
 
     function setup() {
-      createCanvas(1600, 1600);
+      createCanvas(1000, 1000);
       frameRate(10);
-      map = new Map(1600, 1600, 40)
+      map = new Map(1000, 1000, 10);
       // map.populateMap(Cell);
       map.populateMap(Cell, "cell-1", {color: [255,255,255], opacity:100});
-      map.populateMap(Cell, "cell-2", {color: [250,0,0], opacity:100});
-      map.populateMap(Cell, "cell-3", {color: [180,50,0], opacity:100});
-      map.populateMap(Cell, "cell-4", {color: [100,250,50], opacity:100});
-      map.populateMap(Cell, "cell-5", {color: [0,150,250], opacity:100});
+
       // map.populateMap(Cell2);
     }
 
